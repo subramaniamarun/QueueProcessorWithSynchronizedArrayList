@@ -5,14 +5,14 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
-public class QueueProcessor {
+final public class QueueProcessor {
 	// 
 	private List<String> list = Collections.synchronizedList(new ArrayList<String>(100)); //Externally synchronizing the array list as going to use this as a mutex. Can have a separate lock object also for mutex
-	private int counter = 0;
-	private final int limit = 100; //Limit of Queue
-	private String queueItem;
-	private final int minTimeout = 500;
-	private final int maxTimeout = 1501;
+	private Integer counter = 0;
+	private final Integer limit = 100; //Limit of Queue
+	private  String queueItem;
+	private final Integer minTimeout = 500;
+	private final Integer maxTimeout = 1501;
 	
 	
 	
